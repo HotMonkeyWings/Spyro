@@ -80,5 +80,5 @@ async def on_message(message):
             await message.channel.send(msg_absent[i])
         #embed.add_field(name="Present", value=msg_present, inline=False)
         #embed.add_field(name="Absent", value=msg_absent, inline=False)
-client.run('ODE0NDc0NDI1NjYyNzAxNTg4.YDeYaw.yoOuwfyMdT70DqlyYw3GBVxJ5MQ')
 
+client.run()
