@@ -46,6 +46,8 @@
   </ol>
 </details>
 
+## About the Project
+This was made for the intentions of recording attendance in discord servers.
 
 ### Built With
 
@@ -54,7 +56,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get this bot onto your server, follow these steps.
+To deployyour own version of the bot, follow the steps below.
 
 ### Prerequisites
 
