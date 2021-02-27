@@ -67,7 +67,7 @@ To get this bot onto your server, follow these steps.
   ```sh
   pip3 install discord
   ```
-  * Python Time Zone library
+* Python Time Zone library
   ```sh
   pip3 install pytz
   ```
