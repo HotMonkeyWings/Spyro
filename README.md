@@ -84,10 +84,10 @@ To get this bot onto your server, follow these steps.
    ```sh
    python3 bot.py
    ```
-OR to run it as a 24/7 bot on your own server
-   ```sh
-   sudo nohup python3 bot.py >& log.txt &
-   ```
+  OR to run it as a 24/7 bot on your own server
+     ```sh
+    sudo nohup python3 bot.py >& log.txt &
+    ```
 
 #### For inviting my implementation
 2. [Invite the bot to the server](https://discord.com/api/oauth2/authorize?client_id=814474425662701588&permissions=2182417472&scope=bot)
