@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 import pytz
 
-IST = pytz.timezone('Asia/Kolkata')
+IST = pytz.timezone('Asia/Kolkata')     #Change your timezone here
 intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
