@@ -5,15 +5,15 @@
     <img src="discord.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Attendance Bot</h3>
 
   <p align="center">
-    project_description
+    A discord bot for taking attendance with a single command.
     <br />
     <a href="https://github.com/HotMonkeyWings/Spyro/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/HotMonkeyWings/Spyro/">View Demo</a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=814474425662701588&permissions=2182417472&scope=bot">Invite the Bot</a>
     ·
     <a href="https://github.com/HotMonkeyWings/Spyro/issues">Report Bug</a>
     ·
@@ -79,7 +79,6 @@ To get this bot onto your server, follow these steps.
    git clone https://github.com/HotMonkeyWings/Spyro.git
    ```
 
-#### For your own bot
 2. Run the bot (Optional for those who want to host it with their own bot)
    ```sh
    python3 bot.py
@@ -88,9 +87,6 @@ To get this bot onto your server, follow these steps.
      ```sh
     sudo nohup python3 bot.py >& log.txt &
     ```
-
-#### For inviting my implementation
-2. [Invite the bot to the server](https://discord.com/api/oauth2/authorize?client_id=814474425662701588&permissions=2182417472&scope=bot)
 
 
 <!-- USAGE EXAMPLES -->
