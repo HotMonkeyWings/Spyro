@@ -67,11 +67,11 @@ To deploy your own version of the bot, follow the steps below.
 
 * Python Discord API library
   ```sh
-  pip3 install discord
+  pip install discord
   ```
 * Python Time Zone library
   ```sh
-  pip3 install pytz
+  pip install pytz
   ```
 
 ### Installation
