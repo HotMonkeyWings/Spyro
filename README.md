@@ -95,7 +95,7 @@ To deployyour own version of the bot, follow the steps below.
 ## Usage
 
    ```sh
-   -attend <Channel Name>
+   -attend <Channel Name>:<Role Name>
    ```
 
 

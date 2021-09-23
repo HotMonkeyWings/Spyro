@@ -27,18 +27,22 @@ async def on_message(message):
 
     if message.content.startswith("-attend"):
         parts = message.content.split()
-        if len(parts) < 2:
-            await message.channel.send("Correct format: -attend <Groupname>")
-            return
         parts.pop(0)
-        groupName = " ".join(parts)
+        parts = ''.join(parts)
+        parts = parts.split(':')
+        if len(parts) < 2:
+            await message.channel.send("Correct format: -attend <ChannelName>:<Role>")
+            return
+        groupName = parts[0]
+        role = parts[1]
         present = []
         channels = list(message.guild.channels)
         for _ in channels:
             if _.name == groupName:
                 attend = _.members
                 for mem in attend:
-                    present.append(mem.display_name)
+                    if role in [role_.name for role_ in mem.roles]:
+                        present.append(mem.display_name)
 
         #Present List
         msg_present = []
@@ -82,5 +86,8 @@ async def on_message(message):
         #embed.add_field(name="Present", value=msg_present, inline=False)
         #embed.add_field(name="Absent", value=msg_absent, inline=False)
 
-API_KEY=config('KEY')
-client.run(API_KEY) #Insert key here
+try:
+    API_KEY=config('KEY')
+    client.run(API_KEY) #Insert key here
+except:
+    print("Create a .env file with KEY=<Your-API-KEY>")
