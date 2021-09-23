@@ -82,9 +82,9 @@ To deployyour own version of the bot, follow the steps below.
    ```
    
 2. Make a .env file in the following format
-  ```sh
-  API=<API-KEY>
-  ```
+    ```sh
+    API=<API-KEY>
+    ```
 
 3. Run the bot (Optional for those who want to host it with their own bot)
    ```sh
