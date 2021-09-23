@@ -56,7 +56,7 @@ This was made for the intentions of recording attendance in discord servers.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To deployyour own version of the bot, follow the steps below.
+To deploy your own version of the bot, follow the steps below.
 
 ### Prerequisites
 
