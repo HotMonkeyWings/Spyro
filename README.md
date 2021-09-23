@@ -80,8 +80,12 @@ To deployyour own version of the bot, follow the steps below.
    ```sh
    git clone https://github.com/HotMonkeyWings/Spyro.git
    ```
+2. Make a .env file in the following format
+  ```sh
+  API=<API-KEY>
+  ```
 
-2. Run the bot (Optional for those who want to host it with their own bot)
+3. Run the bot (Optional for those who want to host it with their own bot)
    ```sh
    python3 bot.py
    ```
