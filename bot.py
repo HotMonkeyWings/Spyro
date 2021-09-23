@@ -2,6 +2,7 @@ import discord
 import os
 from datetime import datetime
 import pytz
+from decouple import config
 
 IST = pytz.timezone('Asia/Kolkata')     #Change your timezone here
 intents = discord.Intents.default()
@@ -81,4 +82,5 @@ async def on_message(message):
         #embed.add_field(name="Present", value=msg_present, inline=False)
         #embed.add_field(name="Absent", value=msg_absent, inline=False)
 
-client.run()
+API_KEY=config('KEY')
+client.run(API_KEY) #Insert key here
