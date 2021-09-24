@@ -61,6 +61,16 @@ To deploy your own version of the bot, follow the steps below.
 ### Prerequisites
 
 * Python 
+  Windows:
+  [Click Here](https://www.python.org/downloads/)
+  
+  Debian based systems (Ubuntu, DeepinOS, PopOS, etc.):
+  ```sh
+  sudo apt install python
+  sudo apt install python3-pip
+  ```
+  
+  Arch Linux:
   ```sh
   sudo pacman -S python
   ```
