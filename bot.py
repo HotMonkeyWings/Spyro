@@ -20,10 +20,7 @@ async def on_message(message):
         return
     if not message.author.guild_permissions.administrator:
         return
-    members = []
-    for mem in message.guild.members:
-        if not mem.bot:
-            members.append(mem.display_name)
+
 
     if message.content.startswith("-attend"):
         parts = message.content.split()
@@ -37,6 +34,8 @@ async def on_message(message):
         role = parts[1]
         present = []
         channels = list(message.guild.channels)
+
+        # Find participants in channel
         for _ in channels:
             if _.name == groupName:
                 attend = _.members
@@ -44,7 +43,13 @@ async def on_message(message):
                     if role in [role_.name for role_ in mem.roles]:
                         present.append(mem.display_name)
 
-        #Present List
+        # Find all members
+        members = []
+        for mem in message.guild.members:
+            if not mem.bot and role in [role_.name for role_ in mem.roles]:
+                members.append(mem.display_name)
+
+        # Present List Message Generation
         msg_present = []
         temp = ''
         for name in present:
@@ -53,9 +58,12 @@ async def on_message(message):
                 temp = ''
             temp += name + "\n"
         msg_present.append(temp)
+
+        # Check if no one is present
         if len(msg_present[0]) == 0:
             msg_present[0] = "-"
-        #Absent List
+
+        # Absent List Message Generation
         msg_absent = []
         temp = ''
         for name in members:
@@ -65,6 +73,8 @@ async def on_message(message):
                     temp = ''
                 temp += name + "\n"
         msg_absent.append(temp)
+
+        # Check if no one is absent
         if len(msg_absent[0]) == 0:
             msg_absent[0] = "-"
 
