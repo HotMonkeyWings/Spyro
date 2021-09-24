@@ -60,7 +60,7 @@ To deploy your own version of the bot, follow the steps below.
 
 ### Prerequisites
 
-* Python 
+* Python</br>
   Windows:
   [Click Here](https://www.python.org/downloads/)
   
