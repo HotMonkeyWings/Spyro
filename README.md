@@ -63,6 +63,9 @@ To deploy your own version of the bot, follow the steps below.
 * Python</br>
   - Windows:
   [Click Here](https://www.python.org/downloads/)
+  ```sh
+  Ye literally just download and install. You should be good
+  ```
   
   - Debian based systems (Ubuntu, DeepinOS, PopOS, etc.):
   ```sh
@@ -70,7 +73,7 @@ To deploy your own version of the bot, follow the steps below.
   sudo apt install python3-pip
   ```
   
-  - Arch Linux:
+  - Arch based systems (Manjaro, EndeavourOS, etc.):
   ```sh
   sudo pacman -S python
   ```
