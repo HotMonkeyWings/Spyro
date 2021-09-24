@@ -13,7 +13,7 @@
     <a href="https://github.com/HotMonkeyWings/Spyro/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://discord.com/api/oauth2/authorize?client_id=814474425662701588&permissions=2182417472&scope=bot">Invite the Bot</a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=814474425662701588&permissions=527360&scope=bot">Invite the Bot</a>
     ·
     <a href="https://github.com/HotMonkeyWings/Spyro/issues">Report Bug</a>
     ·
